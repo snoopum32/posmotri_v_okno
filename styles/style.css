@@ -36,3 +36,66 @@ ul,
 ol {
   list-style: none;
 }
+
+.page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.result {
+  max-width: 800px;
+}
+
+.search-form {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+}
+
+.content__list {
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+.content__details {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+.title {
+  margin-bottom: 20px;
+}
+
+.result__video-container {
+  max-width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+}
+
+.result__video {
+  width: 100%;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.content__list-item {
+  margin-bottom: 20px;
+}
+
+.content__list-item:last-child {
+  margin-bottom: 0;
+}
