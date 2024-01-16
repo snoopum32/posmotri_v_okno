@@ -69,6 +69,7 @@ ol {
 .content__details {
   display: flex;
   flex-direction: column;
+  /*flex-direction: column;*/
   padding: 0;
 }
 
