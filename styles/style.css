@@ -71,6 +71,15 @@ ol {
   line-height: normal;
 }
 
+.search-form__fieldset {
+  border: none;
+}
+
+.search-form__label {
+  display: flex;
+  gap: 10px;
+}
+
 .content__list {
   max-height: 300px;
   overflow-y: auto;
@@ -176,3 +185,12 @@ ol {
   flex-grow: 1;
 }
 
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
