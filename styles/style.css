@@ -37,6 +37,10 @@ ol {
   list-style: none;
 }
 
+fieldset {
+  border: none;
+}
+
 .page {
   display: flex;
   justify-content: center;
@@ -72,15 +76,25 @@ ol {
 }
 
 .search-form__fieldset {
-
+  display: inline-flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+  width: 225px;
+  height: 54px;
 }
 
 .search-form__label {
   width: fit-content;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
 }
 
 .search-form__checkbox-list {
   display: flex;
+  flex-direction: row;
+  gap: 15px;
 }
 
 .content__list {
@@ -217,4 +231,50 @@ ol {
   border-bottom: 1px solid #FFF;
   border-left: none;
   border-right: none;
+  appearance: none;
+}
+
+.search-form__pseudo-checkbox {
+  display: block;
+  height: 19px;
+  width: 19px;
+  border: 1px solid #FFF;
+}
+
+.button {
+  color: #FFF;
+  text-align: center;
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  display: inline-block;
+  padding: 10px 20px;
+  text-decoration: none;
+}
+
+.search-form__submit-button {
+  display: flex;
+  width: 194px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  background-color: transparent;
+  border: 1px solid #FFF;
+  align-self: flex-end;
+}
+
+.more-button {
+  background-color: transparent;
+  border: 1px solid #FFF;
+  display: flex;
+  width: 399px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
 }
