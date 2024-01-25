@@ -90,6 +90,7 @@ fieldset {
   align-items: center;
   gap: 5px;
   position: relative;
+  border: 1px solid #1b1919;
 }
 
 .search-form__checkbox-list {
@@ -163,6 +164,11 @@ fieldset {
 .content__card-link {
   text-decoration: none;
   color: #ffffff;
+  display: block;
+}
+
+.content__card-link_current:active {
+  background-color: #545050;
 }
 
 .content__video-card-title {
@@ -250,8 +256,10 @@ fieldset {
   content: "";
   display: block;
   background-color:#fff ;
-  width: 15px;
-  height: 15px;
+  width: 14px;
+  height: 13px;
+  margin-top: 2px;
+  margin-left: 2px;
 }
 
 .button {
@@ -280,6 +288,10 @@ fieldset {
   align-self: flex-end;
 }
 
+.search-form__submit-button:active {
+  background-color: #545050;
+}
+
 .more-button {
   background-color: transparent;
   border: 1px solid #FFF;
@@ -290,4 +302,16 @@ fieldset {
   align-items: center;
   gap: 10px;
   flex-shrink: 0;
+}
+
+.search-form__label:hover,
+.search-form__label-text:hover,
+.search-form__submit-button:hover,
+.content__card-link:hover {
+  text-decoration: underline;
+}
+
+.search-form__checkbox:hover,
+.search-form__pseudo-checkbox::after {
+  border: 1px solid #FFF;
 }
