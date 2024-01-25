@@ -89,12 +89,17 @@ fieldset {
   display: inline-flex;
   align-items: center;
   gap: 5px;
+  position: relative;
 }
 
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
   gap: 15px;
+}
+
+.search-form__label:has(:focus-visible) {
+  border: 1px solid #FFF;
 }
 
 .content__list {
@@ -226,12 +231,11 @@ fieldset {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  border: none;
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
-  border-left: none;
-  border-right: none;
-  appearance: none;
+  outline: none;
+  width: 100%;
 }
 
 .search-form__pseudo-checkbox {
@@ -239,6 +243,15 @@ fieldset {
   height: 19px;
   width: 19px;
   border: 1px solid #FFF;
+}
+
+.search-form__checkbox:active + .search-form__pseudo-checkbox::after,
+.search-form__checkbox:focus + .search-form__pseudo-checkbox::after {
+  content: "";
+  display: block;
+  background-color:#fff ;
+  width: 15px;
+  height: 15px;
 }
 
 .button {
