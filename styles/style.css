@@ -92,7 +92,7 @@ fieldset {
 .search-form__checkbox-list {
   display: flex;
   flex-direction: row;
-  margin-left: 5px;
+  gap: 15px;
 }
 
 .search-form__label:has(:focus-visible) {
@@ -303,6 +303,6 @@ fieldset {
   border: 1px solid #FFF;
 }
 
-/*.search-form__pseudo-checkbox:hover {*/
-/*  border: 1px solid #FFF;*/
-/*}*/
+.search-form__label:hover {
+  text-decoration: underline;
+}
