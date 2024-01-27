@@ -14,7 +14,7 @@ html {
   align-items: center;
   justify-content: center;
   inline-size: 1200px;
-  min-block-size: 800px;
+  block-size: 100%;
   margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
