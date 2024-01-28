@@ -113,7 +113,7 @@ fieldset {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 75px;
   font-style: normal;
   font-weight: 700;
@@ -123,15 +123,11 @@ fieldset {
 
 .content__accent {
   color: #545050;
-  font-size: 75px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 94%;
-  text-transform: uppercase;
 }
 
 .result__video-container {
   width: 711px;
+  height: 386px;
   margin-bottom: 16px;
   position: relative;
   overflow: hidden;
@@ -148,6 +144,7 @@ fieldset {
 }
 
 .content__card-link {
+  padding: 2px;
   text-decoration: none;
   color: #ffffff;
   display: block;
@@ -159,7 +156,7 @@ fieldset {
 
 .content__video-card-title {
   color: #FFF;
-  font-family: Oswald;
+  font-family: 'Oswald', sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -188,11 +185,6 @@ fieldset {
   width: 194px;
   height: 103px;
   overflow: hidden;
-}
-
-.img {
-  width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -294,9 +286,15 @@ fieldset {
 
 .search-form__label-text:hover,
 .search-form__submit-button:hover,
-.content__card-link:hover {
+.content__card-link:hover,
+.content__card-link:focus {
   text-decoration: underline;
+  outline: none;
 }
+
+/*.content__card-link:focus {*/
+/*  outline: none;*/
+/*}*/
 
 .search-form__checkbox:hover,
 .search-form__pseudo-checkbox::after {
