@@ -298,3 +298,11 @@ fieldset {
 .search-form__pseudo-checkbox::after {
   border: 1px solid #FFF;
 }
+.search-form__pseudo-checkbox:hover + .search-form__label-text,
+.search-form__label-text:hover {
+  text-decoration: underline;
+}
+
+.search-form__submit-button:hover {
+  text-decoration: underline;
+}
