@@ -269,6 +269,10 @@ fieldset {
   outline: none;
 }
 
+.button:hover {
+  text-decoration: underline;
+}
+
 .button:focus-visible {
   outline: 1px solid #fff;
 }
@@ -290,19 +294,14 @@ fieldset {
 }
 
 .content__card-link:focus {
-  outline: 1px solid #fff;
+  outline: none;
   text-decoration: none;
 }
 
-.search-form__checkbox:hover,
 .search-form__pseudo-checkbox::after {
   border: 1px solid #FFF;
 }
 .search-form__pseudo-checkbox:hover + .search-form__label-text,
 .search-form__label-text:hover {
-  text-decoration: underline;
-}
-
-.search-form__submit-button:hover {
   text-decoration: underline;
 }
